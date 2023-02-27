@@ -1,5 +1,5 @@
 <?php
-	$sql = "SELECT * FROM livro WHERE id=".$_REQUEST['id'];
+	$sql = "SELECT * FROM obra WHERE id=".$_REQUEST['id'];
 
 	$res = $conn->query($sql);
 	$row = $res->fetch_object();
