@@ -1,6 +1,6 @@
 <?php
 	$pesquisar = $_POST['pesquisa'];
-	$sql = "SELECT * FROM livro WHERE titulo LIKE '%$pesquisar%' OR autor LIKE '%$pesquisar%'";
+	$sql = "SELECT * FROM obra WHERE titulo LIKE '%$pesquisar%' OR autor LIKE '%$pesquisar%'";
 	$res = $conn->query($sql);
 	$qtd = $res->num_rows;
 	
