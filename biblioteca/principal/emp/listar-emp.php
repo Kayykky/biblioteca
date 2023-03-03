@@ -2,12 +2,12 @@
 <h1>Listar empréstimos</h1><br>
 	<?php
 		$sql = "SELECT
-				E.id,
+			E.id,
     			L.titulo as livro,
     			E.nome,
     			E.turma,
     			E.data_dev
-				FROM emprestimo E INNER JOIN livro L ON E.livro = L.id";
+			FROM emprestimo E INNER JOIN obra L ON E.livro = L.id";
 
 		$res = $conn->query($sql);
 
