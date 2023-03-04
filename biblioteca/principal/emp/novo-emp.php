@@ -4,14 +4,14 @@
 		<input type="hidden" name="acao" value="cadastrar">
 
 		<label>ID Livro:</label><br>
-		<input type="number" name="livro"><br>
+		<input type="number" name="livro" required><br>
 	
 		<label>Nome:</label><br>
-		<input type="text" name="nome"><br>
+		<input type="text" name="nome" required><br>
 
 		<label>Turma:</label><br>
 		<select name="turma" required>
-			<option disabled selected>Selecione</option>
+			<option value="" disabled selected>Selecione</option>
 			<option value="Professor">Professor</option>
 			<option value="1A">1A</option>
 			<option value="1B">1B</option>
@@ -28,7 +28,7 @@
 		</select><br><br>
 
 		<label>Data de devolução:</label><br>
-		<input type="date" name="data_dev"><br><br>
+		<input type="date" name="data_dev" required><br><br>
 	
 		<button type="submit" class="button">Enviar</button>
 	</form>
