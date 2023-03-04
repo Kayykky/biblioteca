@@ -18,7 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `biblioteca`
+CREATE DATABASE `biblioteca`;
+USE `biblioteca`;
 --
 
 -- --------------------------------------------------------
@@ -105,7 +106,7 @@ ALTER TABLE `funcionario`
 -- AUTO_INCREMENT de tabela `obra`
 --
 ALTER TABLE `obra`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
