@@ -67,12 +67,19 @@
 <!-- partial -->
   <script  src="js/script.js"></script>
   <script type="text/javascript">
-    var lastTab = localStorage.getItem("lastTab");
-    if (lastTab) {
-      openTab(event, lastTab);
-    } else {
+    window.onload = function() {
+      var lastTab = localStorage.getItem("lastTab");
+      if (lastTab) {
+        var tabLinks = document.querySelectorAll(".tablink");
+        for (var i = 0; i < tabLinks.length; i++) {
+          if (tabLinks[i].getAttribute("onClick").includes(lastTab)) {
+            tabLinks[i].click();
+            return;
+          }
+        }
+      }
       openTab(event, "inicio");
-    }
+    };
   </script>
 
 </body>
