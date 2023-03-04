@@ -66,6 +66,14 @@
 </div>
 <!-- partial -->
   <script  src="js/script.js"></script>
+  <script type="text/javascript">
+    var lastTab = localStorage.getItem("lastTab");
+    if (lastTab) {
+      openTab(event, lastTab);
+    } else {
+      openTab(event, "inicio");
+    }
+  </script>
 
 </body>
 </html>
