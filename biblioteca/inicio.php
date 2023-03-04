@@ -85,13 +85,19 @@ include('protect.php');
 <!-- partial -->
   <script  src="js/script.js"></script>
   <script type="text/javascript">
-    // Obtém o nome da última aba ativa do localStorage e exibe-a
-    var lastTab = localStorage.getItem("lastTab");
-    if (lastTab) {
-      openTab(event, lastTab);
-    } else {
-      openTab(event, "inicio"); // Define a aba 'inicio' como padrão se não houver nenhuma aba armazenada
-    }
+    window.onload = function() {
+      var lastTab = localStorage.getItem("lastTab");
+      if (lastTab) {
+        var tabLinks = document.querySelectorAll(".tablink");
+        for (var i = 0; i < tabLinks.length; i++) {
+          if (tabLinks[i].getAttribute("onClick").includes(lastTab)) {
+            tabLinks[i].click();
+            return;
+          }
+        }
+      }
+      openTab(event, "inicio");
+    };
   </script>
 
 </body>
