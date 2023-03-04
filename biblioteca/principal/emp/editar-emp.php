@@ -18,7 +18,7 @@
 
 		<label>Turma:</label><br>
 		<select name="turma" required>
-			<option disabled selected>Selecione</option>
+			<option value="" disabled selected>Selecione</option>
 			<option value="Professor">Professor</option>			
 			<option value="1A">1A</option>
 			<option value="1B">1B</option>
