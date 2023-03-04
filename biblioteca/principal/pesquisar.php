@@ -26,6 +26,6 @@
 		print "</table>";
 	} else{
 		print "<script>alert('Sem resultados!');</script>";
-		print "<p>Sem resultados</p>";
+		print "<p style='color: red'>Sem resultados</p>";
 	}
 ?>
