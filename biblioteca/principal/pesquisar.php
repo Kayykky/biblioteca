@@ -5,7 +5,6 @@
 	$qtd = $res->num_rows;
 	
 	if ($qtd > 0) {
-		print "<script>alert('Achou resultados!');</script>";
 		print "<table>";
 		print "<tr>";
 		print "<th>Título</th>";
@@ -25,7 +24,6 @@
 		}
 		print "</table>";
 	} else{
-		print "<script>alert('Sem resultados!');</script>";
 		print "<p style='color: red'>Sem resultados</p>";
 	}
 ?>
